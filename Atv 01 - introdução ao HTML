@@ -1,0 +1,81 @@
+Conhecendo o HTML e sua estrutura básica 
+
+1. O que é o HTML e qual é o seu papel na construção de páginas web? Descreva brevemente a estrutura básica de um documento HTML. 
+
+HTML significa Hypertext Markup Language, é uma linguagem de marcação e serve para estruturar sites. Uma estrutura básica de HTML vai conter o as tags <html>,
+<head> e <body>.
+
+2. Como o HTML se relaciona com outras tecnologias da web, como o CSS e o JavaScript? Como essas três tecnologias trabalham em conjunto para criar páginas web interativas
+e estilizadas? 
+
+O CSS irá "embelezar" o site, é partir dele que se define cores de texto, posições de textos, animações da página e etc.
+A linguagem de programação JS fará com que o site funcione, interaja com o usuário.
+
+Identificando tags HTML básicas 
+
+1. Cite três tags HTML básicas e explique o propósito de cada uma delas. Dê exemplos de situações em que você as usaria ao construir uma página web.
+
+- <nav> serve para estruturar a navegação da página com links. Por exemplo, quando se tem no site a opção de navegar para outras páginas ou seções.
+- <header> serve para estruturtar o cabeçalho de um site. Por exemplo, quando se entra no site se vê algumas informações na parte mais alta do site, como a logo e etc.
+- <body> serve para estruturar tudo o que será visível no site, ou seja, tudo que se é visto no site, deve estar dentro do body.
+
+2. Além das tags mencionadas, qual é a importância das tags de listagem, como <ul> e <ol>, no contexto da estruturação de conteúdo em uma página? Dê exemplos de quando
+você escolheria uma sobre a outra. 
+
+Elas ajudam a organizar informações em formato de listas, o que pode melhorar a legibilidade e a compreensão do conteúdo para os usuários.
+Quando a ordem da listagem não importa, pode-se usar a tag <ul> que significa unordered list, já se a ordem importar, então usa-se a tag <ol> que significa ordered list, e 
+pode-se listar com números, lestras e algarismos romanos.
+
+Vinculando páginas, arquivos e âncoras 
+
+1. Como a tag <a> é utilizada para criar links em HTML? Explique como você pode vincular para outras páginas, para arquivos locais e criar âncoras dentro de uma página. 
+
+Para criar um link para outra página da web, você precisa definir o atributo href (hiperreferência) dentro da tag <a>. O valor do atributo href é o endereço URL do 
+endereço para o qual você deseja vincular.
+Exemplo:
+<a href="URL do endereço">Nome do link</a>
+Âncoras são usadas para criar links que levam os usuários para uma seção específica dentro da mesma página. Para fazer isso, você precisa definir um identificador (ID) 
+na seção de destino usando o atributo id. Em seguida, você cria um link com o atributo href apontando para o ID da seção desejada, precedido pelo caractere "#".
+Exemplo:
+<h2 id="secao1">Seção 1</h2>
+<a href="#secao1">Ir para Seção 1</a>
+
+2. Além do atributo href, quais outros atributos importantes a tag <a> pode ter? Como o atributo target pode ser usado para controlar como o link é aberto pelo navegador?
+
+Outros atributos são o title (quando o mouse passar por cima do link, o título é exposto) e o target (controla como o link será aberto).
+O target é usado para controlar como o link será aberto, dentro desse comando tem alguns valores:
+_self: O link será aberto na mesma janela ou guia em que o link foi clicado (comportamento padrão).
+_blank: O link será aberto em uma nova janela ou guia do navegador.
+_parent: O link será aberto no quadro pai, útil quando a página possui frames ou iframes.
+_top: O link será aberto na janela superior, substituindo qualquer frames ou iframes existentes.
+
+Incorporando imagens e mídias 
+
+1. Descreva a diferença entre os atributos src e alt em relação à tag <img>. Por que é importante fornecer um atributo alt adequado para imagens? 
+
+O src irá permitir que a imagem seja mostrada no site, ao src deve-se atribuir a URL da imagem (<img src="URL"/>
+O alt mostra um texto caso a imagem não seja exibida.
+Fornecer um atributo `alt` adequado para imagens é crucial para tornar o conteúdo visualmente acessível a pessoas com deficiência visual, pois utilizam leitores de tela,
+ajudar na compreensãodo conteúdo da página quando as imagens não são exibidas corretamente e melhorar a otimização para mecanismos de busca, resultando em uma melhor 
+experiência para todos os usuários.
+
+2. Além de imagens, quais outros tipos de mídia podem ser incorporados em uma página HTML? Como você pode garantir que a mídia incorporada seja responsiva e se ajuste bem em
+diferentes dispositivos?
+
+Videos, GIFS, áudios, mapas. 
+
+Criando tabelas básicas 
+
+1. Quais são as principais tags usadas para criar tabelas em HTML? Explique a diferença entre as tags <th> e <td>, e quando você as usaria.
+
+Tags para criar tabelas: table, tr, th, td.
+
+2. Embora tabelas sejam usadas para exibir dados tabulares, às vezes é recomendado evitá-las em favor de outras formas de apresentação de dados. Por quê? E quais são os cenários em que as tabelas são apropriadas? 
+
+Criando formulários 
+1. Como a tag <form> é utilizada para criar formulários em HTML? Cite pelo menos três tipos diferentes de campos de entrada (<input>) que podem ser usados em um formulário. 
+2. Além dos campos de entrada, quais outros elementos podem ser incluídos em um formulário para melhorar a usabilidade e a experiência do usuário? 
+
+Técnicas avançadas de estruturação com elementos HTML5 semânticos 
+1. O que são elementos HTML5 semânticos e por que são importantes na estruturação de uma página? Cite três exemplos de elementos semânticos e explique quando você os usaria. 
+2. Além da semântica, como os elementos HTML5 podem afetar a acessibilidade das páginas web? Por que é fundamental considerar a acessibilidade ao escolher elementos de estruturação?
