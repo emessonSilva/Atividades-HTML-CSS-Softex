@@ -63,14 +63,25 @@ experiência para todos os usuários.
 diferentes dispositivos?
 
 Videos, GIFS, áudios, mapas. 
+Para garantir que a mídia incorporada seja responsiva e se ajuste bem em diferentes dispositivos: definir tamanhos máximos, usar unidades de medida flexíveis,
+utilizar media queries, tags de video responsivas.
 
 Criando tabelas básicas 
 
 1. Quais são as principais tags usadas para criar tabelas em HTML? Explique a diferença entre as tags <th> e <td>, e quando você as usaria.
 
 Tags para criar tabelas: table, tr, th, td.
+A tag <th> é usada para difinir o título da coluna, sendo em negrito.
+A tag <dh> é usada para as células, sendo o texto não-negrito.
 
-2. Embora tabelas sejam usadas para exibir dados tabulares, às vezes é recomendado evitá-las em favor de outras formas de apresentação de dados. Por quê? E quais são os cenários em que as tabelas são apropriadas? 
+2. Embora tabelas sejam usadas para exibir dados tabulares, às vezes é recomendado evitá-las em favor de outras formas de apresentação de dados. Por quê? 
+E quais são os cenários em que as tabelas são apropriadas? 
+
+Tabelas, embora úteis para dados tabulares, devem ser evitadas em certos casos devido a problemas de acessibilidade, responsividade e semântica.
+Tabelas complexas podem ser difíceis para leitores de tela, não se adaptam bem a dispositivos móveis e podem comprometer a estrutura da página. 
+Portanto, alternativas como CSS flexível e técnicas semânticas são preferíveis para layouts complexos, enquanto tabelas são mais adequadas para dados organizados.
+
+Tabelas são apropriadas em cenários onde a exibição de dados tabulares é o foco principal. Exemplo: Dados comparativos.
 
 Criando formulários 
 1. Como a tag <form> é utilizada para criar formulários em HTML? Cite pelo menos três tipos diferentes de campos de entrada (<input>) que podem ser usados em um formulário. 
