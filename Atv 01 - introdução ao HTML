@@ -84,9 +84,34 @@ Portanto, alternativas como CSS flexível e técnicas semânticas são preferív
 Tabelas são apropriadas em cenários onde a exibição de dados tabulares é o foco principal. Exemplo: Dados comparativos.
 
 Criando formulários 
+
 1. Como a tag <form> é utilizada para criar formulários em HTML? Cite pelo menos três tipos diferentes de campos de entrada (<input>) que podem ser usados em um formulário. 
+
+A tag <form> é fundamental na criação de formulários interativos em HTML. Ela envolve todos os elementos do formulário, permitindo que os usuários insiram e enviem informações. 
+Dentro do <form>, você coloca diversos elementos como <input>, <textarea>, e outros, para coletar informações como texto, números, escolhas e mais. 
+A tag <label> pode ser usada para associar rótulos descritivos a esses elementos de entrada. Além disso, é possível definir campos obrigatórios usando o atributo required e incluir 
+um botão de envio com <input type="submit">.
+
+Tipos de input (exemplos): email,password, date.
+
 2. Além dos campos de entrada, quais outros elementos podem ser incluídos em um formulário para melhorar a usabilidade e a experiência do usuário? 
 
+Botões de submit e reset, checkbox, radio, textarea.
+
 Técnicas avançadas de estruturação com elementos HTML5 semânticos 
+
 1. O que são elementos HTML5 semânticos e por que são importantes na estruturação de uma página? Cite três exemplos de elementos semânticos e explique quando você os usaria. 
+
+Elementos HTML5 semânticos são tags introduzidas na versão HTML5 que possuem significado e contexto claros em relação ao conteúdo que envolvem.
+Esses elementos ajudam a estruturar uma página de forma mais compreensível tanto para os desenvolvedores quanto para os navegadores e mecanismos de busca.
+
+<header>: O elemento <header> é usado para representar o cabeçalho de uma seção ou da página inteira. É um local adequado para incluir logotipos, títulos principais e elementos de navegação. 
+<article>: O elemento <article> é utilizado para identificar conteúdo autônomo e autocontido que faz sentido por si só. Isso pode ser um post de blog, um artigo de notícia, uma entrada em um fórum, entre outros. 
+<footer>: A tag <footer> é utilizada para marcar o rodapé de uma seção ou da página inteira. É apropriada para incluir informações de contato, links de redes sociais, direitos autorais e outros elementos relacionados ao fim da página. 
+
 2. Além da semântica, como os elementos HTML5 podem afetar a acessibilidade das páginas web? Por que é fundamental considerar a acessibilidade ao escolher elementos de estruturação?
+
+Ao escolher elementos de estruturação, considerar a acessibilidade é fundamental para garantir que todos os usuários, independentemente de suas habilidades ou dispositivos, 
+possam acessar e interagir com o conteúdo de forma eficaz. Ao considerar a acessibilidade ao escolher elementos de estruturação, você está garantindo que seu site seja inclusivo
+e acessível para um público diversificado. Isso não apenas atende às necessidades de pessoas com deficiência, mas também melhora a usabilidade para todos os usuários, resultando em uma experiência mais positiva e eficaz.
+
