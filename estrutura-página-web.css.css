@@ -1,0 +1,108 @@
+* {
+    margin: 0px;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 1fr 70px;
+    gap: 10px;
+    background-color: black;
+    gap: 10px;
+}
+
+header,
+main,
+footer {
+  border: 5px solid blue;
+  color: blue;
+  padding: 10px;
+}
+
+nav {
+    width: 70%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 30%;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "h1 aside"
+      "section1 aside"
+      "section2 aside"
+    ;
+    gap: 10px;
+}
+
+  nav,
+  section,
+  aside {
+    border: 5px solid red;
+    color:red;
+    padding: 10px;
+}
+
+
+aside{
+    grid-area: aside;
+}
+
+main h1 {
+    grid-area: h1;
+}
+
+#section1 {
+    grid-area: section1;
+}
+
+#section2 {
+    grid-area: section2;
+}
+
+article {
+    border: 5px solid green;
+    color: green;
+    height: 70px;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+aside section {
+    border: 5px solid blue;
+    color: blue;
+    height: 100px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+@media (max-width: 680px) {
+    main {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "h1"
+        "section1"
+        "section2"
+        "aside";   
+        gap: 10px;
+    }
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        overflow: scroll;
+        overflow-y: hidden;
+      }
+    
+    aside div {
+        display: flex;
+        gap: 10px;
+      }
+}
