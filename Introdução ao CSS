@@ -1,0 +1,132 @@
+Compreendendo o CSS e seu papel no desenvolvimento web
+
+1. O que é o CSS e qual é o seu papel no desenvolvimento web? Como o CSS ajuda a separar a
+apresentação visual do conteúdo estrutural em uma página web?
+- O CSS significa Cascading Style Sheets ou Folhas de Estilo em Cascata e basicamente serve para estilizar arquivos HTML,
+  e para separar os arquivos CSS e HTML, basta colocar a tag <link rel="stylesheet" url="url do arquivo css">.
+
+2. Além do HTML, quais outras tecnologias frequentemente trabalham em conjunto com o CSS para
+melhorar a experiência do usuário em um site? Como essa integração afeta a usabilidade e a
+estilização das páginas?
+- HTML e CSS são a base da construção de páginas da web. No entanto, para aprimorar a experiência do usuário, outras tecnologias são frequentemente usadas, tais como:
+  JavaScript adiciona interatividade, enquanto frameworks CSS e pré-processadores simplificam a estilização; web fonts e SVG melhoram a aparência, e APIs web fornecem funcionalidades extras. 
+  Essa integração cria sites mais usáveis, responsivos e visualmente atraentes, resultando em uma experiência do usuário de alta qualidade.
+
+
+Identificando a estrutura de uma regra CSS
+
+1. Descreva os três componentes principais de uma regra CSS: seletor, propriedades e valores. Dê um
+exemplo de uma regra CSS completa.
+- O seletor define onde será aplicado a estilização;
+- As propriedades são os tipos de estilização disponíveis no CSS (exemplo, color (cor));
+- Os valores são os complementos das propriedades (exemplo, propriedade: color valor: red).
+- h1 {
+       font-family: sans serif;
+}
+
+2. Como as regras CSS são interpretadas pelos navegadores? Como o navegador determina qual estilo
+aplicar a um elemento específico com base nas regras CSS?
+- As regras CSS são interpretadas pelos navegadores em um processo de análise do documento HTML, construção da árvore do DOM e correspondência de seletores CSS. 
+  O navegador associa elementos HTML com os seletores CSS correspondentes e aplica os estilos encontrados, resultando na estilização apropriada dos elementos na página da web.
+
+
+Aplicando estilos básicos usando seletores
+
+1. Explique a diferença entre seletores de tipo, classe e ID no CSS. Quando você usaria um seletor de
+classe em vez de um seletor de ID?
+- Seletor de tipo define-se pelas tags do HTML;
+- Seletor de classe define-se por uma classe determinada em alguma tag do HTML;
+- Seletor de id define-se por um id determinado em alguma tag do HTML.
+- Geralmente uma classe é utilizada para estilizar uma classe/conjunto de elementos, enquanto o id é pode ser usado para um elemento em específico.
+
+2. Além dos seletores básicos, como os seletores de pseudo-elementos podem ser usados para
+estilizar partes específicas de um elemento HTML? Dê exemplos.
+- Os seletores de pseudo-elementos são usados para estilizar partes específicas de um elemento HTML, como o primeiro caractere de um elemento <p> ou a primeira linha de um texto. 
+  Eles são precedidos por dois pontos duplos (::) e permitem a aplicação de estilos a partes do conteúdo que não são diretamente representadas por elementos HTML individuais.
+
+- p::first-line {
+    font-weight: bold;
+    color: blue;
+} 
+
+- p::first-letter {
+    font-size: 24px;
+    color: red;
+
+
+Controlando tamanho e posicionamento com box model
+
+1. O que é o modelo de caixa (box model) no CSS? Descreva as partes principais do modelo de caixa e
+como as propriedades de margem, borda e preenchimento (margin, border e padding) afetam o
+tamanho de um elemento.
+- O modelo de caixa (box model) no CSS é uma representação fundamental de como os elementos HTML são dimensionados e estruturados visualmente em uma página da web. 
+  A box model é composta por 4 partes: Content, padding, border e margin.
+
+- Margem (margin): As margens definem o espaço entre o elemento e elementos vizinhos. Elas não afetam o tamanho real do elemento, mas adicionam espaço ao seu redor.
+- Borda (border): A borda afeta o tamanho total do elemento, pois é desenhada ao redor do conteúdo e do preenchimento. A largura da borda é adicionada ao tamanho do elemento.
+- Preenchimento (padding): O preenchimento afeta o espaço interno do elemento, aumentando ou diminuindo o espaço entre o conteúdo e a borda. Ele também contribui para o tamanho total do elemento.
+
+2. Como você pode usar o modelo de caixa para controlar o espaçamento entre elementos em uma
+página? Dê exemplos de situações em que ajustar as margens, bordas e preenchimentos seria útil.
+- Você pode usar o modelo de caixa no CSS para controlar o espaçamento entre elementos em uma página da web ajustando as margens, bordas e preenchimentos.
+Isso permite definir o espaço entre elementos, criar botões com bordas distintas, espaçamento interno em caixas de conteúdo, alinhar e espaçar texto, centralizar elementos e 
+criar espaçamento externo ao redor de grupos de elementos. Em resumo, o modelo de caixa é essencial para um layout e estilização eficazes de páginas da web.
+
+- Espaçamento entre parágrafos: Você pode usar margens para adicionar espaço vertical entre parágrafos de texto, tornando o conteúdo mais legível e organizado.
+- Botões de navegação: Para criar botões de navegação com uma aparência clara e distinta, você pode adicionar bordas e preenchimento.
+- Imagens em uma galeria: Margens podem ser usadas para criar espaço entre imagens em uma galeria de fotos.
+- Formulários: Os preenchimentos podem ser usados para criar espaço interno dentro de campos de formulário.
+
+
+Compreendendo o modelo de layout Flexbox
+
+1. Explique o que é o modelo de layout Flexbox. Quais são os principais conceitos por trás desse
+modelo e como ele facilita a criação de layouts responsivos?
+
+2. Compare o modelo de layout Flexbox com o modelo de layout baseado em grades (Grid Layout). Em
+quais situações você escolheria usar um modelo sobre o outro?
+
+Utilizando propriedades de fonte para estilizar textos
+
+1. Cite pelo menos três propriedades CSS que podem ser usadas para estilizar textos. Como você pode
+aplicar essas propriedades para melhorar a legibilidade e a estética do texto em uma página web?
+
+2. Além das propriedades de fonte, como as propriedades de espaçamento (como line-height e
+letter-spacing) podem afetar a aparência do texto em uma página?
+
+
+Aplicando cores a elementos
+
+1. Descreva as propriedades color e background-color no CSS. Como você pode usar essas
+propriedades para definir as cores do texto e do fundo de um elemento?
+
+2. Além das cores sólidas, como o CSS permite a aplicação de gradientes de cores em elementos?
+Quais são as vantagens de usar gradientes em comparação com cores sólidas?
+
+
+Identificando pseudoclasses comuns
+
+1. O que são pseudoclasses no CSS e por que elas são usadas? Dê exemplos de pseudoclasses comuns,
+como :hover, :active, :visited e :focus, e explique quando elas são aplicadas.
+
+2. Além das pseudoclasses mencionadas, cite outras pseudoclasses que podem ser usadas para criar
+interações e estilos específicos em elementos HTML. Como as pseudoclasses contribuem para a
+experiência do usuário?
+
+
+Criando layouts responsivos
+
+1. O que é um layout responsivo e por que é importante considerar a responsividade ao desenvolver
+um site? Como as consultas de mídia (media queries) são usadas para criar layouts que se adaptam
+a diferentes dispositivos?
+
+2. Além das consultas de mídia, quais outras abordagens podem ser usadas para melhorar a
+responsividade de um site? Como o design fluido e os sistemas de grid podem contribuir para uma
+experiência consistente em diversos dispositivos?
+
+
+
+
+
+
+
