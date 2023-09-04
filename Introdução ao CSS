@@ -83,13 +83,31 @@ Compreendendo o modelo de layout Flexbox
 1. Explique o que é o modelo de layout Flexbox. Quais são os principais conceitos por trás desse
 modelo e como ele facilita a criação de layouts responsivos?
 
+- O modelo de layout Flexbox é uma técnica em CSS que facilita a criação de layouts responsivos para sites. Ele se baseia em conceitos como contêiner flex, itens flex, eixos principais e transversais, justificação
+  e alinhamento. O Flexbox simplifica a organização e o alinhamento de elementos, tornando os layouts flexíveis e adaptáveis a diferentes dispositivos. Ele oferece controle independente sobre os elementos, permitindo
+  reorganizações fáceis e eficientes. Em resumo, o Flexbox é uma ferramenta poderosa para criar layouts web flexíveis e eficazes.
+
 2. Compare o modelo de layout Flexbox com o modelo de layout baseado em grades (Grid Layout). Em
 quais situações você escolheria usar um modelo sobre o outro?
+
+- Flexbox:
+  1. É ideal para layouts unidimensionais, como linhas ou colunas.
+  2. Facilita o alinhamento e a distribuição de elementos em uma única direção (eixo principal), seja horizontal ou vertical.
+  3. Ótimo para organizar itens de tamanhos variados de maneira uniforme em uma direção.
+  4. É útil quando você precisa criar menus, barras laterais, cabeçalhos ou qualquer layout em que os elementos estejam em uma única fila ou coluna.
+
+- Grid Layout:
+  1. É mais adequado para layouts bidimensionais, ou seja, que envolvem tanto linhas quanto colunas.
+  2. Permite criar layouts complexos e alinhamento preciso de elementos em ambas as direções (eixos principal e transversal).
+  3. Ótimo para criar grades, estruturas de tipo tabela, layouts de página mais complexos e designs em que você precisa posicionar elementos em várias colunas e linhas.
+  4. É especialmente útil para criar layouts de grade responsivos.
 
 Utilizando propriedades de fonte para estilizar textos
 
 1. Cite pelo menos três propriedades CSS que podem ser usadas para estilizar textos. Como você pode
 aplicar essas propriedades para melhorar a legibilidade e a estética do texto em uma página web?
+
+- Font-family, font-weight, font-size.
 
 2. Além das propriedades de fonte, como as propriedades de espaçamento (como line-height e
 letter-spacing) podem afetar a aparência do texto em uma página?
