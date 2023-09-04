@@ -108,29 +108,62 @@ Utilizando propriedades de fonte para estilizar textos
 aplicar essas propriedades para melhorar a legibilidade e a estética do texto em uma página web?
 
 - Font-family, font-weight, font-size.
+ - Font-family: define um estilo de fonte para o texto (ex.: sans serif);
+ - Font-weight: define a espessura da fonte do texto, você pode usá-la para criar texto em negrito ou normal;
+ - Font-height: define a altura da fonte do texto.
 
 2. Além das propriedades de fonte, como as propriedades de espaçamento (como line-height e
 letter-spacing) podem afetar a aparência do texto em uma página?
 
+- line-height: Esta propriedade controla a altura de cada linha de texto em relação ao tamanho da fonte. Um line-height adequado pode melhorar a legibilidade do texto, garantindo que haja espaço
+  suficiente entre as linhas.
+
+- letter-spacing (espaçamento entre letras): Essa propriedade controla o espaço entre os caracteres individuais em uma palavra ou frase. Aumentar o letter-spacing pode adicionar espaço entre as letras, tornando o texto
+  mais legível em alguns casos, especialmente para tamanhos de fonte menores ou fontes com caracteres muito próximos. 
 
 Aplicando cores a elementos
 
 1. Descreva as propriedades color e background-color no CSS. Como você pode usar essas
 propriedades para definir as cores do texto e do fundo de um elemento?
 
+- Color: muda a cor da fonte;
+  Exemplo de uso: p {
+                      color: red;
+                  }
+
+- Background-color: muda a cor de fundo do texto.
+ Exemplo de uso: h1 {
+                      background-color: blue;
+                 }
+
 2. Além das cores sólidas, como o CSS permite a aplicação de gradientes de cores em elementos?
 Quais são as vantagens de usar gradientes em comparação com cores sólidas?
 
+- O CSS permite a aplicação de gradientes de cores em elementos usando a propriedade background. Gradientes são uma técnica poderosa para criar transições suaves de cor em vez de usar uma única cor sólida. 
+  Existem dois tipos principais de gradientes suportados em CSS:
+    - Gradientes Lineares: Esses gradientes criam uma transição suave de uma cor para outra em uma linha reta. Você pode definir a direção, o ângulo e as cores para criar gradientes personalizados.
+    - Gradientes Radiais:  Esses gradientes criam uma transição suave a partir de um ponto central em direção às bordas. Você pode definir a posição do centro, o tamanho e as cores para criar gradientes radiais. 
 
 Identificando pseudoclasses comuns
 
 1. O que são pseudoclasses no CSS e por que elas são usadas? Dê exemplos de pseudoclasses comuns,
 como :hover, :active, :visited e :focus, e explique quando elas são aplicadas.
 
+- As pseudo-classes no CSS são seletores que permitem estilizar elementos com base em estados específicos (como hover) ou características internas (como links visitados). 
+Elas são usadas para aplicar estilos em resposta a interações do usuário e criar efeitos interativos em elementos HTML.
+ - :hover: Aplicada quando o cursor do mouse está sobre o elemento. É frequentemente usada para criar efeitos de destaque quando um usuário passa o mouse sobre um link ou botão.
+ - :active: Aplicada quando um elemento está ativamente sendo clicado ou tocado. Geralmente usado para destacar o estado "pressionado" de um botão ou link.
+ - :visited: Aplicada a links que já foram visitados pelo usuário. Permite estilizar links visitados de forma diferente dos não visitados.
+ - :focus: Aplicada quando um elemento recebe foco, geralmente por meio de interação do teclado ou navegação por abas. É usado para destacar elementos que podem ser interativos, como campos de formulário.
+
 2. Além das pseudoclasses mencionadas, cite outras pseudoclasses que podem ser usadas para criar
 interações e estilos específicos em elementos HTML. Como as pseudoclasses contribuem para a
 experiência do usuário?
 
+ - :nth-child(): Essa pseudoclasse permite selecionar elementos com base em sua posição relativa dentro de um pai. 
+ - :enabled e :disabled: Essas pseudoclasses são usadas principalmente com elementos de formulário para selecionar elementos habilitados ou desabilitados, permitindo estilos diferentes para campos ativos e inativos.
+
+- As pseudoclasses contribuem para a experiência do usuário ao permitir a criação de interfaces mais interativas e amigáveis. Elas fornecem feedback visual, como destacar links quando o mouse passa sobre eles, indicar
 
 Criando layouts responsivos
 
@@ -138,9 +171,26 @@ Criando layouts responsivos
 um site? Como as consultas de mídia (media queries) são usadas para criar layouts que se adaptam
 a diferentes dispositivos?
 
+- Layout responsivo: refere-se à capacidade de um site se adaptar e ser exibido de forma adequada em diferentes dispositivos e tamanhos de tela, como desktops, tablets e smartphones.
+  É importante considerar a responsividade ao desenvolver um site porque os usuários acessam a web por meio de uma variedade de dispositivos, e um layout que não se ajusta corretamente pode resultar em uma 
+  experiência de usuário ruim. A responsividade garante que o conteúdo e o design sejam legíveis e utilizáveis, independentemente do dispositivo utilizado.
+
+- Consultas de mídia (media queries): são usadas para criar layouts responsivos. Elas permitem que os desenvolvedores definam regras de estilo condicionais com base nas características do dispositivo, como largura 
+  da tela, altura da tela e orientação. Por exemplo, uma consulta de mídia pode ser usada para aplicar um estilo específico quando a largura da tela for menor que 768 pixels, tornando o layout mais adequado para
+  dispositivos móveis. Isso garante que o site se ajuste de forma adequada às diferentes telas, proporcionando uma experiência consistente e amigável para o usuário em todos os dispositivos.
+
 2. Além das consultas de mídia, quais outras abordagens podem ser usadas para melhorar a
 responsividade de um site? Como o design fluido e os sistemas de grid podem contribuir para uma
 experiência consistente em diversos dispositivos?
+
+- Design Fluido (Fluid Design): O design fluido envolve o uso de unidades de medida relativas, como porcentagens, em vez de unidades fixas, como pixels, para dimensionar elementos. Isso permite que o conteúdo se expanda
+  ou contraia proporcionalmente ao tamanho da tela do dispositivo. 
+
+- Sistemas de Grid (Grid Systems): Os sistemas de grid são estruturas que permitem organizar elementos de maneira consistente e alinhada em um layout. Eles são particularmente úteis em designs responsivos, pois facilitam
+  a criação de layouts flexíveis. 
+
+- Imagens Responsivas: O uso de imagens responsivas é fundamental para evitar o carregamento de imagens grandes e não otimizadas em dispositivos móveis. A tag <img> pode incluir o atributo srcset, que permite fornecer 
+  diferentes versões da mesma imagem para diferentes resoluções de tela, e o atributo sizes para indicar como a imagem deve ser dimensionada com base na largura da tela.
 
 
 
